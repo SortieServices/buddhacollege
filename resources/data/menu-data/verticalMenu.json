@@ -1,0 +1,264 @@
+{
+  "menu": [
+    {
+      "name": "Dashboards",
+      "url": "admin/dashboard",
+      "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+      "icon": "home",
+      "slug": "dashboard"
+    },
+
+      {
+        "name": "Works",
+        "badge": "4",
+        "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+        "icon": "plus",
+        "slug": "works",
+        "submenu": [
+          {
+            "url": "works",
+            "name": "List",
+            "icon": "list",
+            "slug": "works-list"
+          },
+          {
+            "url": "works/biddings",
+            "name": "Biddings",
+            "icon": "circle",
+            "slug": "works-biddings"
+          },
+          {
+            "url": "works/chat",
+            "name": "Chat",
+            "icon": "circle",
+            "slug": "works-chat"
+          }
+        ]
+      },
+      {
+        "name": "Customers",
+        "badge": "4",
+        "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+        "icon": "plus",
+        "slug": "customers",
+        "submenu": [
+          {
+            "url": "customers",
+            "name": "List",
+            "icon": "list",
+            "slug": "customers-list"
+          },
+          {
+            "url": "customers/add",
+            "name": "Add",
+            "icon": "circle",
+            "slug": "customers-add"
+          }
+        ]
+      },
+      {
+        "name": "Contractors",
+        "badge": "4",
+        "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+        "icon": "user-x",
+        "slug": "contractors",
+        "submenu": [
+          {
+            "url": "contractors",
+            "name": "List",
+            "icon": "list",
+            "slug": "contractors-list"
+          },
+          {
+            "url": "contractors/add",
+            "name": "Add",
+            "icon": "user-plus",
+            "slug": "contractors-add"
+          }
+
+        ]
+      },
+
+    {
+      "navheader": "Review & Ratings",
+      "slug": ""
+    },
+    {
+        "name": "Reviews",
+        "badge": "3",
+        "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+        "icon": "calendar",
+        "slug": "review",
+        "submenu": [
+          {
+            "url": "reviews",
+            "name": "Reviews",
+            "icon": "circle",
+            "slug": "reviews"
+          },
+          {
+            "url": "ratings",
+            "name": "Ratings",
+            "icon": "circle",
+            "slug": "ratings"
+          }
+        ]
+      },
+      {
+        "name": "Ratings",
+        "icon": "users",
+        "slug": "",
+        "submenu": [
+            {
+                "url": "ratings",
+                "name": "Ratings",
+                "icon": "circle",
+                "slug": "ratings"
+            },
+            {
+                "url": "ratings/contractors",
+                "name": "Contractors Ratings",
+                "icon": "circle",
+                "slug": "ratings-contractors"
+            }
+
+        ]
+      },
+    {
+        "name": "Chat",
+        "icon": "layout",
+        "slug": "",
+        "submenu": [
+            {
+                "url": "chat/customers",
+                "name": "Customers",
+                "icon": "circle",
+                "slug": "chat-customers"
+            },
+            {
+                "url": "chat/contractors",
+                "name": "Contractors",
+                "icon": "circle",
+                "slug": "chat-contractors"
+            }
+
+        ]
+    },
+    {
+        "url": "notifications",
+        "name": "Notifications",
+        "icon": "circle",
+        "slug": "notifications"
+    },
+    {
+        "navheader": "Data Settings",
+        "slug": ""
+    },
+    {
+        "name": "Packages",
+        "icon": "file-text",
+        "slug": "",
+        "submenu": [
+          {
+            "url": "plans",
+            "name": "Plans",
+            "icon": "circle",
+            "slug": "packages-plans"
+          },
+          {
+            "url": "plans-features",
+            "name": "Plans Features",
+            "icon": "circle",
+            "slug": "packages-plans-features"
+          }
+
+        ]
+    },
+    {
+        "name": "Locations",
+        "icon": "file-text",
+        "slug": "",
+        "submenu": [
+          {
+            "url": "states",
+            "name": "State",
+            "icon": "circle",
+            "slug": "location-states"
+          },
+          {
+            "url": "cities",
+            "name": "City",
+            "icon": "circle",
+            "slug": "location-states-city"
+          }
+
+        ]
+    },
+    {
+        "name": "Material Rate",
+        "icon": "file-text",
+        "slug": "",
+        "submenu": [
+          {
+            "url": "material-rates",
+            "name": "List",
+            "icon": "circle",
+            "slug": "material-rates"
+          },
+          {
+            "url": "material-rates/create",
+            "name": "Add",
+            "icon": "circle",
+            "slug": "material-rates-create"
+          }
+
+        ]
+    },
+    {
+        "navheader": "Settings",
+        "slug": ""
+    },
+    {
+        "name": "Users",
+        "badge": "4",
+        "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+        "icon": "user",
+        "slug": "user"
+      },
+      {
+        "name": "Roles",
+        "badge": "4",
+        "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+        "icon": "shield",
+        "slug": "roles"
+      },
+      {
+        "name": "Permission",
+        "badge": "4",
+        "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+        "icon": "user-x",
+        "slug": "permission"
+      },
+      {
+        "name": "Attributes",
+        "badge": "4",
+        "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+        "icon": "user-x",
+        "slug": "attributes"
+      },
+      {
+        "name": "Work Domain",
+        "badge": "4",
+        "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+        "icon": "user-x",
+        "slug": "works-domains"
+      },
+      {
+        "name": "Banners",
+        "badge": "4",
+        "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+        "icon": "user-x",
+        "slug": "banners"
+      }
+  ]
+}
