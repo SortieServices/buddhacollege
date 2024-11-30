@@ -38,8 +38,6 @@
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Mobile</th>
-                                    <th>Last Login</th>
-                                    <th>Role</th>
                                     <th>Created At</th>
                                     <th>Status</th>
                                     <th>Actions</th>
@@ -69,7 +67,7 @@
   <script>
 
 
-    getajaxdata('{{ route("users.index") }}','user');
+    getajaxdata('{{ route("users.index") }}','users');
 
 
 

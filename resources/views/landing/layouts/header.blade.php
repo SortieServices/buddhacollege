@@ -33,11 +33,12 @@
                         <nav class="navbar_bar">
                             <ul>
                                 <li>
-                                    <a class="nav-link {{ request()->is('/') || request()->is('home') ? 'active' : '' }}" aria-current="page"  href="{{ route('home') }}">Home</a>
-                                </li>
-                                <li>
                                     <a class="nav-link {{ request()->is('about') ? 'active' : '' }}" href="{{ route('about.index') }}">About Us</a>
                                 </li>
+                                <li>
+                                    <a class="nav-link {{ request()->is('/') || request()->is('home') ? 'active' : '' }}" aria-current="page"  href="{{ route('home') }}">Admission</a>
+                                </li>
+
                                 <li class="mega_menu_dropdown">
                                     <a class="mega_menu_dropdown-toggle nav-link {{ request()->is('courses/*') || request()->is('courses') ? 'active' : '' }} " href="{{ route('courses.index')}}">Courses</a>
                                     <ul>
@@ -51,7 +52,8 @@
                                     <a class="nav-link {{ request()->is('academic') ? 'active' : '' }}" aria-current="page" href="{{ route('academic.index') }}">Academic</a>
                                 </li>
                                 <li><a class="nav-link {{ request()->is('activity') ? 'active' : '' }}" href="{{ route('activity.index') }}">Activity</a></li>
-                                <li><a class="nav-link {{ request()->is('contact') ? 'active' : '' }}" href="{{ route('contact.index') }}">Contact Us</a></li>
+                                <li><a class="nav-link {{ request()->is('activity') ? 'active' : '' }}" href="{{ route('activity.index') }}">Gallery</a></li>
+                                {{-- <li><a class="nav-link {{ request()->is('contact') ? 'active' : '' }}" href="{{ route('contact.index') }}">Contact Us</a></li> --}}
                             </ul>
                         </nav>
                         {{-- <div class="navbar_btn">

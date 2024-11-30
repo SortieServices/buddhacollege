@@ -39,9 +39,9 @@ $configData = Helper::applClasses();
                   </g>
                 </g>
               </svg> --}}
-              Dreaho
+              Buddha Nursing College
             </span>
-            <h2 class="brand-text mb-0">Dreaho</h2>
+            <h2 class="brand-text mb-0">Buddha Nursing College</h2>
           </a>
         </li>
         <li class="nav-item nav-toggle">

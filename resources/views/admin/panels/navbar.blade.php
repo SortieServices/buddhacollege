@@ -39,7 +39,7 @@
                 </g>
               </svg></span> --}}
 
-            <h2 class="brand-text mb-0">Dreaho</h2>
+            <h2 class="brand-text mb-0">Buddha Nursing College</h2>
           </a>
         </li>
       </ul>
@@ -169,7 +169,7 @@
             @if (Auth::check())
               {{ Auth::user()->first_name }}
             @else
-              Dreaho
+              Buddha Nursing College
             @endif
           </span>
           <span class="user-status">

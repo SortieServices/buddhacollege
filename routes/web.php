@@ -8,11 +8,13 @@ use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
+require __DIR__ . '/admin.php';
+
 Route::get('/', function () {
     return view('home');
 });
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [AboutController::class, 'index'])->name('about.index');

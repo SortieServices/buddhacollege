@@ -15,11 +15,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta name="description"
-    content="Dreaho">
+    content="Buddha Nursing College">
   <meta name="keywords"
-    content="Dreaho">
+    content="Buddha Nursing College">
   <meta name="author" content="PIXINVENT">
-  <title>{{ config('app.name', 'Dreaho') }}</title>
+  <title>{{ config('app.name', 'Buddha Nursing College') }}</title>
   <link rel="apple-touch-icon" href="{{ asset('img/favicon.png') }}">
   <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.png') }}">
 

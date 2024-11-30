@@ -20,8 +20,8 @@ $configData = Helper::applClasses();
     content="">
   <meta name="keywords"
     content="">
-  <meta name="author" content="Dreaho">
-  <title>@yield('title') - Dreaho | Home</title>
+  <meta name="author" content="Buddha Nursing College">
+  <title>@yield('title') - Buddha Nursing College | Home</title>
   <link rel="apple-touch-icon" href="{{ asset('img/favicon.png') }}">
   <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.png') }}">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
