@@ -17,41 +17,33 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="col-lg-3 col-sm-6">
-                <div class="single_feature_footer footer_nav">
-                    <h4>Popular Courses</h4>
-                    <ul>
-                        <li><a href="course-details.html">Algebra & Calculus</a></li>
-                        <li><a href="course-details.html">Business Strategy</a></li>
-                        <li><a href="course-details.html">Computer Security & Network</a></li>
-                        <li><a href="course-details.html">Data Analysis</a></li>
-                        <li><a href="course-details.html">English Learning</a></li>
-                        <li><a href="course-details.html">Music & Art</a></li>
-                    </ul>
-                </div>
-            </div> --}}
             <div class="col-lg-3 col-sm-6">
                 <div class="single_feature_footer footer_nav">
                     <h4>COURSES</h4>
                     <ul>
-                        <li><a href="course-category.html">Nurshing</a></li>
-                        <li><a href="course-category.html">Pharmacy</a></li>
-                        <li><a href="course-category.html">ANM</a></li>
-                        <li><a href="course-category.html">GNM</a></li>
+                        <li><a href="{{ route('courses.nurshing') }}">Nurshing</a></li>
+                        <li><a href="{{ route('courses.d-pharma') }}">D.Pharma</a></li>
+                        <li><a href="{{ route('courses.b-pharma') }}">D.Pharma</a></li>
+                        <li><a href="{{ route('courses.anm') }}">ANM</a></li>
+                        <li><a href="{{ route('courses.gnm') }}">GNM</a></li>
+                        <li><a href="{{ route('admission') }}">Admission</a></li>
                     </ul>
                 </div>
+                <button type="button" class="btn btn-outline-primary position-absolute px-5 py-2" style="bottom: 80px;">Enroll Now</button>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="single_feature_footer footer_nav">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Academic</a></li>
-                        <li><a href="#">Activity</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="{{ route('home')}}">Home</a></li>
+                        <li><a href="{{ route('about')}}">About Us</a></li>
+                        <li><a href="{{ route('academic') }}">Academic</a></li>
+                        <li><a href="{{ route('news-events.index')}}">News & Events</a></li>
+                        <li><a href="{{ route('contact') }}">Contact</a></li>
+                        <li><a href="{{ route('investors')}}">Investors</a></li>
                     </ul>
                 </div>
+                <a href="{{ asset('landing/uploads/PROSPECTUS.pdf')}}" target="_blank" class="btn btn-outline-primary position-absolute px-5 py-2" style="bottom: 80px;">Download Browser</a>
             </div>
             <div class="col-lg-12">
                 <div class="copyright_part">

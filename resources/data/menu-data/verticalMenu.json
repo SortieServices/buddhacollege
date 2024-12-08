@@ -22,35 +22,37 @@
         "slug": "registration.index"
     },
     {
-        "url": "notifications",
+        "url": "admin/notifications",
         "name": "Notifications",
         "icon": "circle",
-        "slug": "notifications"
+        "slug": "notifications.index"
     },
     {
         "name": "Banners",
         "badge": "4",
         "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
         "icon": "user-x",
-        "slug": "banners"
+        "url": "admin/banners",
+        "slug": "banners.index"
     },
     {
         "name": "News & Events",
         "badge": "4",
+        "url": "admin/newsevents",
         "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
         "icon": "user-x",
-        "slug": "banners"
+        "slug": "newsevents.index"
     },
     {
         "navheader": "Students",
         "slug": ""
     },
     {
-        "name": "Addmission",
-        "url": "admin/addmissions",
+        "name": "Admission",
+        "url": "admin/admissions",
         "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
         "icon": "user",
-        "slug": "addmissions.index"
+        "slug": "admissions.index"
     },
     {
         "navheader": "Settings",
@@ -68,6 +70,23 @@
         "name": "City",
         "icon": "circle",
         "slug": "cities.index"
+    },
+    {
+        "navheader": "Blogs",
+        "slug": ""
+    },
+    {
+        "name": "Blogs",
+        "url": "admin/blogs",
+        "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+        "icon": "circle",
+        "slug": "blogs.index"
+    },
+    {
+        "url": "admin/blogs",
+        "name": "Create",
+        "icon": "circle",
+        "slug": "blogs.index"
     }
   ]
 }

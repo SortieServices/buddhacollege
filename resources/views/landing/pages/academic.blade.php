@@ -1,224 +1,223 @@
 @extends('landing.layouts.base')
 
+@section('title', 'Academic')
+
 @section('content')
 
-
+<link rel="stylesheet" href="{{ asset('landing/css/courses.css')}}"/>
     <!-- breadcrumb part -->
-    <section class="breadcrumb_part blog_grid_bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 ">
-                    <div class="breadcrumb_iner">
-                        <h2>Blog Left Sidebar</h2>
-                        <div class="breadcrumb_iner_link">
-                            <a href="index-2.html">Home</a>
-                            <i class="arrow_carrot-right"></i>
-                            <span>Blog Left Sidebar</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    @include('landing.components.breadcrumb',['title' => 'Academic', 'subtitle' => '', 'banner' => ''])
     <!-- breadcrumb part end -->
 
-    <!-- blog left sidebar part here -->
     <section class="blog_page section_padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="blog_sidebar left-sidebar">
-                        <div data-aos="fade-up"
-            data-aos-duration="1200" class="single_sidebar">
-                            <form action="#" class="search_form">
-                                <input type="text" name="#" placeholder="Search...">
-                                <i class="icon_search"></i>
-                            </form>
-                        </div>
-                        <div data-aos="fade-up"
-            data-aos-duration="1400" class="single_sidebar">
-                            <h3>Latest Posts</h3>
-                            <div class="single_sidebar_post">
-                                <img src="img/category_post/post_1.png" alt="">
-                                <div class="sidebar_post_content">
-                                    <h4> <a href="blog-details-right-sidebar.html"> How to Become Master In CSS within a Week.</a></h4>
-                                    <p>April 12, 2023</p>
-                                </div>
-                            </div>
-                            <div class="single_sidebar_post">
-                                <img src="img/category_post/post_2.png" alt="">
-                                <div class="sidebar_post_content">
-                                    <h4> <a href="blog-details-right-sidebar.html">Top 20 WordPress Themes for Local Businesses.</a></h4>
-                                    <p>April 12, 2023</p>
-                                </div>
-                            </div>
-                            <div class="single_sidebar_post">
-                                <img src="img/category_post/post_3.png" alt="">
-                                <div class="sidebar_post_content">
-                                    <h4> <a href="blog-details-right-sidebar.html">Students work together to solve a problem.</a></h4>
-                                    <p>April 12, 2023</p>
-                                </div>
-                            </div>
-                            <div class="single_sidebar_post">
-                                <img src="img/category_post/post_4.png" alt="">
-                                <div class="sidebar_post_content">
-                                    <h4> <a href="blog-details-right-sidebar.html"> Research of Learn training process.</a></h4>
-                                    <p>April 12, 2023</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-aos="fade-up"
-            data-aos-duration="1600" class="single_sidebar">
-                            <h3>Categories</h3>
-                            <div class="category_list">
-                                <p> <a href="#"><i class="arrow_carrot-right"></i>App Design  (4)</a> </p>
-                                <p> <a href="#"><i class="arrow_carrot-right"></i>Logo Design  (6)</a> </p>
-                                <p> <a href="#"><i class="arrow_carrot-right"></i>Busness  (10)</a> </p>
-                                <p> <a href="#"><i class="arrow_carrot-right"></i>IT & Software  (14)</a> </p>
-                                <p> <a href="#"><i class="arrow_carrot-right"></i>Programming  (12)</a> </p>
-                                <p> <a href="#"><i class="arrow_carrot-right"></i>Technology  (10)</a> </p>
-                                <p> <a href="#"><i class="arrow_carrot-right"></i>Music  (8)</a> </p>
-                                <p> <a href="#"><i class="arrow_carrot-right"></i>Creative  (9)</a> </p>
-                            </div>
-                        </div>
-                        <div data-aos="fade-up"
-            data-aos-duration="1800" class="single_sidebar">
-                            <h3>Tags</h3>
-                            <div class="sidebar_tag_list">
-                                <a href="#" class="btn_4">Education</a>
-                                <a href="#" class="btn_4">Web Design</a>
-                                <a href="#" class="btn_4">Food</a>
-                                <a href="#" class="btn_4">Cooling System </a>
-                                <a href="#" class="btn_4">Amazing</a>
-                                <a href="#" class="btn_4">Software</a>
-                                <a href="#" class="btn_4">Landing</a>
-                                <a href="#" class="btn_4">Clean</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="blog_post_list">
-                        <div data-aos="fade-up"
-            data-aos-duration="1200" class="single_page_blog_post">
-                            <img src="uploads/2020/01/blog_1.png" alt="#" class="img-fluid">
-                            <div class="single_blog_content">
-                                <div class="post_author">
-                                    <p><i class="icon_profile"></i>Jim Séchen</p>
-                                    <p><i class="icon_clock_alt"></i>October 14, 2023</p>
-                                </div>
-                                <h2> <a href="blog-details-right-sidebar.html">Top 10 WordPress Themes for Local Businesses</a> </h2>
-                                <p>Twit cuppa Oxford car boot baking cakes I dropped a clanger
-                                cheeky bugger young delinquent say, hunky-dory ruddy butty matie
-                                boy cheeky cup of char ummm I'm telling get stuffed mate owt to do
-                                with me blow.</p>
-                                <a href="blog-details-right-sidebar.html" class="read_more_btn">Read More <i class="arrow_right"></i> </a>
-                            </div>
-                        </div>
-                        <div data-aos="fade-up"
-            data-aos-duration="1400" class="single_page_blog_post">
-                            <div class="single_blog_content">
-                                <div class="post_author">
-                                    <p><i class="icon_profile"></i>Jim Séchen</p>
-                                    <p><i class="icon_clock_alt"></i>October 14, 2023</p>
-                                </div>
-                                <h2> <a href="blog-details-right-sidebar.html">How to Become Master In CSS within a Week.</a> </h2>
-                                <p>Twit cuppa Oxford car boot baking cakes I dropped a clanger
-                                cheeky bugger young delinquent say, hunky-dory ruddy butty matie
-                                boy cheeky cup of char ummm I'm telling get stuffed mate owt to do
-                                with me blow.</p>
-                                <a href="blog-details-right-sidebar.html" class="read_more_btn">Read More <i class="arrow_right"></i> </a>
-                            </div>
-                        </div>
-                        <div data-aos="fade-up"
-            data-aos-duration="1600" class="single_page_blog_post">
-                            <img src="uploads/2020/01/blog_2.png" alt="#" class="img-fluid">
-                            <div class="single_blog_content">
-                                <div class="post_author">
-                                    <p><i class="icon_profile"></i>Jim Séchen</p>
-                                    <p><i class="icon_clock_alt"></i>October 14, 2023</p>
-                                </div>
-                                <h2> <a href="blog-details-right-sidebar.html">Business development ceremony for BBA student .</a> </h2>
-                                <p>Twit cuppa Oxford car boot baking cakes I dropped a clanger
-                                cheeky bugger young delinquent say, hunky-dory ruddy butty matie
-                                boy cheeky cup of char ummm I'm telling get stuffed mate owt to do
-                                with me blow.</p>
-                                <a href="blog-details-right-sidebar.html" class="read_more_btn">Read More <i class="arrow_right"></i> </a>
-                            </div>
-                        </div>
-                        <div data-aos="fade-up"
-            data-aos-duration="1800" class="single_page_blog_post quote_post">
-                            <div class="single_blog_content">
-                                <div class="post_author">
-                                    <p><i class="icon_clock_alt"></i>October 14, 2023</p>
-                                </div>
-                                <p>My lady the bee's knees cack bog-standard mush A bit of
-                                how's your father, bits and bobs off his nut Oxford crikey the BBC, chinwag
-                                a blinding shot pardon me bleeding.</p>
-                                <a href="blog-details-right-sidebar.html" class="read_more_btn">Read More <i class="arrow_right"></i></a>
-                                <img src="img/icon/quote_1.png" alt="#" class="quote_icon_1">
-                                <img src="img/icon/quote_2.png" alt="#" class="quote_icon_2">
-                            </div>
-                        </div>
-                        <div data-aos="fade-up"
-            data-aos-duration="2000" class="single_page_blog_post video_post">
-                            <div class="post_thumb">
-                                <img src="uploads/2020/01/blog_3.png" alt="#" class="img-fluid">
-                                <a href="https://www.youtube.com/watch?v=x4q86IjJFag" class="popup_youtube">
-                                <span class="flaticon-play-button" ></span></a>
-                             </div>
+                @include('landing.components.academic-sidebar')
+                <div class="col-lg-9">
+                    <div class="container">
+                        <div id="content" class="site-content" bis_skin_checked="1">
+                            <div class="lp-archive-courses" bis_skin_checked="1">
+                                <div class="lp-content-area" bis_skin_checked="1">
+                                    <ul class="learn-press-courses" data-layout="list">
+                                        <li id="post-1026" class="post-1026 lp_course type-lp_course status-publish has-post-thumbnail hentry course_category-computer-science course">
+                                            <div class="course-item" bis_skin_checked="1">
+                                                <div class="course-wrap-thumbnail" bis_skin_checked="1">
+                                                    <div class="course-thumbnail" bis_skin_checked="1">
+                                                        <a href="course-details.html" bis_skin_checked="1">
+                                                            <div class="thumbnail-preview" bis_skin_checked="1">
+                                                                <div class="thumbnail" bis_skin_checked="1">
+                                                                    <div class="centered" bis_skin_checked="1">
+                                                                        <img width="370" height="280" src="{{ asset('landing/uploads/img/d-pharma.jpeg')}}" class="attachment-500x300 size-500x300 wp-post-image" alt="Software Development" loading="lazy" title="Software Development">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div><!-- START .course-content -->
+                                                <div class="course-content" bis_skin_checked="1">
+                                                    <div class="course-categories" bis_skin_checked="1">
+                                                        <a href="course-category.html" rel="tag" bis_skin_checked="1">Diploma</a>
+                                                    </div>
+                                                    <a href="course-details.html" class="course-permalink" bis_skin_checked="1">
+                                                        <h3 class="course-title">Diploma in Pharmacy</h3>
+                                                    </a>
+                                                    <div class="separator" bis_skin_checked="1"></div>
+                                                    <div class="course-info" bis_skin_checked="1">
+                                                        <div class="course-description" bis_skin_checked="1">
+                                                            <p>The Pharmacy profession offers diverse job opportunities in India and around the world. Pharmacists may practice in a community or hospital pharmacy; a nursing home or extended care facility; the Pharmaceutical Industry, Biotechnology industry and other private or public companies. Pharmacy graduates worldwide are among the best-paid and most respected professionals and the recent healthcare trends make pharmacy a near recession-proof career choice!
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix" bis_skin_checked="1"></div>
+                                                        <div class="course-readmore" bis_skin_checked="1">
+                                                            <a href="course-details.html" bis_skin_checked="1">View More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- END .course-content -->
+                                            </div>
+                                        </li>
 
-                            <div class="single_blog_content">
-                                <div class="post_author">
-                                    <p><i class="icon_profile"></i>Jim Séchen</p>
-                                    <p><i class="icon_clock_alt"></i>October 14, 2023</p>
+                                        <li id="post-1026" class="post-1026 lp_course type-lp_course status-publish has-post-thumbnail hentry course_category-computer-science course">
+                                            <div class="course-item" bis_skin_checked="1">
+                                                <div class="course-wrap-thumbnail" bis_skin_checked="1">
+                                                    <div class="course-thumbnail" bis_skin_checked="1">
+                                                        <a href="course-details.html" bis_skin_checked="1">
+                                                            <div class="thumbnail-preview" bis_skin_checked="1">
+                                                                <div class="thumbnail" bis_skin_checked="1">
+                                                                    <div class="centered" bis_skin_checked="1">
+                                                                        <img width="370" height="280" src="{{ asset('landing/uploads/img/anm.jpg')}}" class="attachment-500x300 size-500x300 wp-post-image" alt="Software Development" loading="lazy" title="Software Development">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div><!-- START .course-content -->
+                                                <div class="course-content" bis_skin_checked="1">
+                                                    <div class="course-categories" bis_skin_checked="1">
+                                                        <a href="course-category.html" rel="tag" bis_skin_checked="1">Diploma</a>
+                                                    </div>
+                                                    <a href="course-details.html" class="course-permalink" bis_skin_checked="1">
+                                                        <h3 class="course-title">ANM</h3>
+                                                    </a>
+                                                    <div class="separator" bis_skin_checked="1"></div>
+                                                    <div class="course-info" bis_skin_checked="1">
+                                                        <div class="course-description" bis_skin_checked="1">
+                                                            <p>Auxiliary Nurse Midwifery (Nursing) course is a 12th standard Medical Nursing course. It deals with the field of science and covers healthcare profession focused on the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life from conception to death.
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix" bis_skin_checked="1"></div>
+                                                        <div class="course-readmore" bis_skin_checked="1">
+                                                            <a href="course-details.html" bis_skin_checked="1">View More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- END .course-content -->
+                                            </div>
+                                        </li>
+
+                                        <li id="post-1026" class="post-1026 lp_course type-lp_course status-publish has-post-thumbnail hentry course_category-computer-science course">
+                                            <div class="course-item" bis_skin_checked="1">
+                                                <div class="course-wrap-thumbnail" bis_skin_checked="1">
+                                                    <div class="course-thumbnail" bis_skin_checked="1">
+                                                        <a href="course-details.html" bis_skin_checked="1">
+                                                            <div class="thumbnail-preview" bis_skin_checked="1">
+                                                                <div class="thumbnail" bis_skin_checked="1">
+                                                                    <div class="centered" bis_skin_checked="1">
+                                                                        <img width="370" height="280" src="{{ asset('landing/uploads/img/gnm.jpg')}}" class="attachment-500x300 size-500x300 wp-post-image" alt="Software Development" loading="lazy" title="Software Development">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div><!-- START .course-content -->
+                                                <div class="course-content" bis_skin_checked="1">
+                                                    <div class="course-categories" bis_skin_checked="1">
+                                                        <a href="course-category.html" rel="tag" bis_skin_checked="1">Diploma</a>
+                                                    </div>
+                                                    <a href="course-details.html" class="course-permalink" bis_skin_checked="1">
+                                                        <h3 class="course-title">GNM</h3>
+                                                    </a>
+                                                    <div class="separator" bis_skin_checked="1"></div>
+                                                    <div class="course-info" bis_skin_checked="1">
+                                                        <div class="course-description" bis_skin_checked="1">
+                                                            <p>GNM program is meant to prepare general nurses who can efficiently perform as members of the health team and capable of dealing the contingencies in both the hospitals and other such organizations.
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix" bis_skin_checked="1"></div>
+                                                        <div class="course-readmore" bis_skin_checked="1">
+                                                            <a href="course-details.html" bis_skin_checked="1">View More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- END .course-content -->
+                                            </div>
+                                        </li>
+
+                                        <li id="post-1026" class="post-1026 lp_course type-lp_course status-publish has-post-thumbnail hentry course_category-computer-science course">
+                                            <div class="course-item" bis_skin_checked="1">
+                                                <div class="course-wrap-thumbnail" bis_skin_checked="1">
+                                                    <div class="course-thumbnail" bis_skin_checked="1">
+                                                        <a href="course-details.html" bis_skin_checked="1">
+                                                            <div class="thumbnail-preview" bis_skin_checked="1">
+                                                                <div class="thumbnail" bis_skin_checked="1">
+                                                                    <div class="centered" bis_skin_checked="1">
+                                                                        <img width="370" height="280" src="{{ asset('landing/uploads/img/b-pharma.jpg')}}" class="attachment-500x300 size-500x300 wp-post-image" alt="Software Development" loading="lazy" title="Software Development">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div><!-- START .course-content -->
+                                                <div class="course-content" bis_skin_checked="1">
+                                                    <div class="course-categories" bis_skin_checked="1">
+                                                        <a href="course-category.html" rel="tag" bis_skin_checked="1">Graduate Program</a>
+                                                    </div>
+                                                    <a href="course-details.html" class="course-permalink" bis_skin_checked="1">
+                                                        <h3 class="course-title">Bachelor in Pharmacy</h3>
+                                                    </a>
+                                                    <div class="separator" bis_skin_checked="1"></div>
+                                                    <div class="course-info" bis_skin_checked="1">
+                                                        <div class="course-description" bis_skin_checked="1">
+                                                            <p>The Pharmacy profession offers diverse job opportunities in India and around the world. Pharmacists may practice in a community or hospital pharmacy; a nursing home or extended care facility; the Pharmaceutical Industry, Biotechnology industry and other private or public companies. Pharmacy graduates worldwide are among the best-paid and most respected professionals and the recent healthcare trends make pharmacy a near recession-proof career choice!
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix" bis_skin_checked="1"></div>
+                                                        <div class="course-readmore" bis_skin_checked="1">
+                                                            <a href="course-details.html" bis_skin_checked="1">View More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- END .course-content -->
+                                            </div>
+                                        </li>
+
+                                        <li id="post-1026" class="post-1026 lp_course type-lp_course status-publish has-post-thumbnail hentry course_category-computer-science course">
+                                            <div class="course-item" bis_skin_checked="1">
+                                                <div class="course-wrap-thumbnail" bis_skin_checked="1">
+                                                    <div class="course-thumbnail" bis_skin_checked="1">
+                                                        <a href="course-details.html" bis_skin_checked="1">
+                                                            <div class="thumbnail-preview" bis_skin_checked="1">
+                                                                <div class="thumbnail" bis_skin_checked="1">
+                                                                    <div class="centered" bis_skin_checked="1">
+                                                                        <img width="370" height="280" src="{{ asset('landing/uploads/img/nursing.jpg')}}" class="attachment-500x300 size-500x300 wp-post-image" alt="Software Development" loading="lazy" title="Software Development">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div><!-- START .course-content -->
+                                                <div class="course-content" bis_skin_checked="1">
+                                                    <div class="course-categories" bis_skin_checked="1">
+                                                        <a href="course-category.html" rel="tag" bis_skin_checked="1">Graduate Program</a>
+                                                    </div>
+                                                    <a href="course-details.html" class="course-permalink" bis_skin_checked="1">
+                                                        <h3 class="course-title">Bechelor in Nursing</h3>
+                                                    </a>
+                                                    <div class="separator" bis_skin_checked="1"></div>
+                                                    <div class="course-info" bis_skin_checked="1">
+                                                        <div class="course-description" bis_skin_checked="1">
+                                                            <p>The duration of the course for B.Sc Nursing shall be 4 years including internship. The course commences from 1st august of the academic year. University examinations are conducted at the end of the year (non semester pattern).
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix" bis_skin_checked="1"></div>
+                                                        <div class="course-readmore" bis_skin_checked="1">
+                                                            <a href="course-details.html" bis_skin_checked="1">View More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- END .course-content -->
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <h2> <a href="blog-details-right-sidebar.html">Top 10 WordPress Themes for Local Businesses</a> </h2>
-                                <p>Twit cuppa Oxford car boot baking cakes I dropped a clanger
-                                cheeky bugger young delinquent say, hunky-dory ruddy butty matie
-                                boy cheeky cup of char ummm I'm telling get stuffed mate owt to do
-                                with me blow.</p>
-                                <a href="blog-details-right-sidebar.html" class="read_more_btn">Read More <i class="arrow_right"></i> </a>
                             </div>
                         </div>
-                        <div data-aos="fade-up"
-            data-aos-duration="2200" class="single_page_blog_post link_post">
-                            <div class="single_blog_content">
-                                <div class="post_author">
-                                    <p><i class="icon_clock_alt"></i>October 14, 2023</p>
-                                </div>
-                                <p>Cheeky bugger morish cack a mush wind tickety boo pear shaped my good sir, ruddy blatant say boot.!</p>
-                                <a href="blog-details-right-sidebar.html" class="read_more_btn">Read More <i class="arrow_right"></i></a>
-                            </div>
-                        </div>
-                        <div data-aos="fade-up"
-            data-aos-duration="2400" class="single_page_blog_post video_post">
-                             <img src="uploads/2020/01/blog_4.png" alt="#" class="img-fluid">
-                            <div class="single_blog_content">
-                                <div class="post_author">
-                                    <p><i class="icon_profile"></i>Jim Séchen</p>
-                                    <p><i class="icon_clock_alt"></i>October 14, 2023</p>
-                                </div>
-                                <h2> <a href="blog-details-right-sidebar.html">Best products for fitness nutrition and muscles</a> </h2>
-                                <p>Twit cuppa Oxford car boot baking cakes I dropped a clanger
-                                cheeky bugger young delinquent say, hunky-dory ruddy butty matie
-                                boy cheeky cup of char ummm I'm telling get stuffed mate owt to do
-                                with me blow.</p>
-                                <a href="blog-details-right-sidebar.html" class="read_more_btn">Read More <i class="arrow_right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up"
-            data-aos-duration="2600" class="page_pageination justify-content-start">
-                        <a class="current" href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#"> <i class="arrow_right"></i> </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- blog left sidebar part end -->
 
     <!-- cta part here -->
     <section class="cta_part section_padding">

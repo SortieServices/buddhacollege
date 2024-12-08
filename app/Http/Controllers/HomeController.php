@@ -25,4 +25,24 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function about()
+    {
+        return view('landing.pages.about');
+    }
+
+    public function contact()
+    {
+        return view('landing.pages.contact');
+    }
+
+    public function investors()
+    {
+        return view('landing.pages.investors');
+    }
+
+    public function gallery()
+    {
+        return view('landing.pages.gallery');
+    }
 }

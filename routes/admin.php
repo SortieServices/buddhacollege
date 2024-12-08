@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EnquiryController;
 use App\Http\Controllers\Admin\location\CityController;
+use App\Http\Controllers\Admin\NewsEventController;
+use App\Http\Controllers\Admin\NotificationController;
 use App\Http\Controllers\Admin\RegistrationController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
@@ -59,5 +62,9 @@ Route::middleware('auth','web')->prefix('admin')->group(function(){
 
     Route::resource('/enquiry', EnquiryController::class);
     Route::resource('/registration', RegistrationController::class);
+
+    Route::resource('/banners', BannerController::class);
+    Route::resource('/newsevents', NewsEventController::class);
+    Route::resource('/notifications', NotificationController::class);
 
 });

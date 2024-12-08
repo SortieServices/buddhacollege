@@ -1,54 +1,77 @@
 @extends('landing.layouts.base')
 
+@section('title', 'Home')
+
 @section('content')
 
     <!-- slider part here -->
     <section class="banner_part owl-carousel">
-        <div class="single_banner_part bg_1">
+        <div class="single_banner_part" style="background-image: url('{{ isset($banner) &&  $banner != '' ? asset('landing/uploads/img/'.$banner) : asset('landing/uploads/img/banner-3.jpg') }}'); background-position: center;background-repeat: no-repeat;background-size: cover;">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-8">
                         <div class="banner_iner">
                             <h2>Welcome to Buddha Nursing College</h2>
                             <h5>This is where we teach students skills they need to transform themselves, others, and our global communities.</h5>
-                            <a href="course-list.html" class="btn_2">Our Courses</a>
+                            {{-- <a href="course-list.html" class="btn_2">Our Courses</a> --}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="single_banner_part bg_2">
+        <div class="single_banner_part" style="background-image: url('{{ isset($banner) &&  $banner != '' ? asset('landing/uploads/img/'.$banner) : asset('landing/uploads/img/banner-2.jpg') }}'); background-position: center;background-repeat: no-repeat;background-size: cover;">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-8">
                         <div class="banner_iner">
                             <h2>Welcome to Buddha Nursing College</h2>
                             <h5>Education is the backbone of a nation</h5>
-                            <a href="course-list.html" class="btn_2">Our Courses</a>
+                            {{-- <a href="course-list.html" class="btn_2">Our Courses</a> --}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="single_banner_part bg_3">
+        <div class="single_banner_part" style="background-image: url('{{ isset($banner) &&  $banner != '' ? asset('landing/uploads/img/'.$banner) : asset('landing/uploads/img/banner-1.jpg') }}'); background-position: center;background-repeat: no-repeat;background-size: cover;">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-8">
                         <div class="banner_iner">
                             <h2>Welcome to Buddha Nursing College</h2>
                             <h5>Education is the best key success in life</h5>
-                            <a href="course-list.html" class="btn_2">Our Courses</a>
+                            {{-- <a href="course-list.html" class="btn_2">Our Courses</a> --}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </section>
+    <div class="d-none d-md-block" style="position: relative; z-index: 1;margin-top: -100px; ">
+        <div class="container bg-primary" style="border-radius: 5px;">
+            <div class="row justify-content-around align-items-center" style="height: 60px;">
+                <a class="nav-link text-white" href="{{ route('courses.anm') }}">ANM</a>
+                <a class="nav-link text-white" href="{{ route('courses.gnm') }}">GNM</a>
+                <a class="nav-link text-white" href="{{ route('courses.d-pharma') }}">D.Pharma</a>
+                <a class="nav-link text-white" href="{{ route('courses.b-pharma') }}">B.Pharma</a>
+                <a class="nav-link text-white" href="{{ route('courses.nurshing') }}">B.sc(nursing)</a>
+            </div>
+        </div>
+    </div>
     <!-- slider part end -->
 
-    <!-- course details part here -->
-    <section class="course_details padding_bottom">
+     <!-- course details part here -->
+     <section class="course_details padding_bottom padding_top">
         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1300">
+                    <div class="section_tittle">
+                        <h2>Core values</h2>
+                        <p>The lighted lamp burns bright when the wick and oil are clean</p>
+                    </div>
+                </div>
+            </div>
             <div class="row justify-content-between align-items-center">
                 <div class="col-xl-7 col-md-7">
                     <div class="course_details_iner">
@@ -56,25 +79,25 @@
                         data-aos-duration="1200">
                             <img src="{{ asset('landing/img/icon/course_1.svg')}}" alt="">
                             <h4>Clinicals</h4>
-                            <p>To provide vast and rich experience for the students we have tie up facilities with Govt., enabling students to gain experience in various rural and Urban Government Health Programmes.</p>
+                            <p class="course-excerpt">To provide vast and rich experience for the students we have tie up facilities with Govt., enabling students to gain experience in various rural and Urban Government Health Programmes.</p>
                         </div>
                         <div class="single_course_list" data-aos="fade-up"
                         data-aos-duration="1600">
                             <img src="{{ asset('landing/img/icon/course_2.svg')}}" alt="">
                             <h4>Faculty</h4>
-                            <p>Full Fledged qualified and experienced staff working consistently for more than 10 years. </p>
+                            <p class="course-excerpt">Full Fledged qualified and experienced staff working consistently for more than 10 years. </p>
                         </div>
                         <div class="single_course_list" data-aos="fade-up"
                         data-aos-duration="2000">
                             <img src="{{ asset('landing/img/icon/course_3.svg')}}" alt="">
                             <h4>Hostel</h4>
-                            <p>It is equipped with reading rooms, recreation hall, visitors hall, sick room, Hygienic Kitchen with R.O water plant and solar system Hot water facility.</p>
+                            <p class="course-excerpt">It is equipped with reading rooms, recreation hall, visitors hall, sick room, Hygienic Kitchen with R.O water plant and solar system Hot water facility.</p>
                         </div>
                         <div class="single_course_list" data-aos="fade-up"
                         data-aos-duration="2400">
                             <img src="{{ asset('landing/img/icon/course_4.svg')}}" alt="">
                             <h4>Infrastructure</h4>
-                            <p>Constructed on a sprawling campus and has an excellent physical infrastructure as per the Indian Nursing Council norms.</p>
+                            <p class="course-excerpt">Constructed on a sprawling campus and has an excellent physical infrastructure as per the Indian Nursing Council norms.</p>
                         </div>
                     </div>
                 </div>
@@ -116,6 +139,69 @@
     </section>
     <!-- course details part end -->
 
+        <!-- course category part here -->
+        <section class="course_category section_padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="section_tittle">
+                            <h2>Explore Our
+                                Courses</h2>
+                            <p>Buddha health care aims at offering all our students a broad and balanced curriculum that provides rewarding and stimulating activities to prepare them for the best social and cultural life.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12" data-aos="fade-up"
+                    data-aos-duration="1200">
+                        <div class="course_category_item owl-carousel">
+                            <a href="course-category.html" class="single_category_item pink">
+                                <img src="{{ asset('landing/uploads/2022/11/category_icon_1.png')}}" alt="#">
+                                <h4>ANM</h4>
+                                <p>Graduate Courses</p>
+                            </a>
+                            <a href="course-category.html" class="single_category_item">
+                                <img src="{{ asset('landing/uploads/2022/11/category_icon_2.png')}}" alt="#">
+                                <h4>GNM</h4>
+                                <p>Graduate Courses</p>
+                            </a>
+                            <a href="course-category.html" class="single_category_item yellow">
+                                <img src="{{ asset('landing/uploads/2022/11/category_icon_3.png')}}" alt="#">
+                                <h4>Pharmacy</h4>
+                                <p>Diploma Courses</p>
+                            </a>
+                            <a href="course-category.html" class="single_category_item green">
+                                <img src="{{ asset('landing/uploads/2022/11/category_icon_4.png')}}" alt="#">
+                                <h4>Pharmacy</h4>
+                                <p>Graduate Courses</p>
+                            </a>
+                            <a href="course-category.html" class="single_category_item pink">
+                                <img src="{{ asset('landing/uploads/2022/11/category_icon_1.png')}}" alt="#">
+                                <h4>Nursing</h4>
+                                <p>Diploma Courses</p>
+                            </a>
+                            <a href="course-category.html" class="single_category_item">
+                                <img src="{{ asset('landing/uploads/2022/11/category_icon_2.png')}}" alt="#">
+                                <h4>Nursing</h4>
+                                <p>Graduate Courses</p>
+                            </a>
+                            {{-- <a href="course-category.html" class="single_category_item yellow">
+                                <img src="{{ asset('landing/uploads/2022/11/category_icon_3.png')}}" alt="#">
+                                <h4>Technology</h4>
+                                <p>3 Courses</p>
+                            </a>
+                            <a href="course-category.html" class="single_category_item green">
+                                <img src="{{ asset('landing/uploads/2022/11/category_icon_4.png')}}" alt="#">
+                                <h4>IT & Software</h4>
+                                <p>3 Courses</p>
+                            </a> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- course category part end -->
+
+
+
     <!-- about us part here -->
     <section class="about_us section_padding" >
         <div class="container">
@@ -140,13 +226,10 @@
                     <div class="about_us_details">
                         <h2>We are Experts
                             Learning Institution</h2>
-                        <h3>20 Years of Experience</h3>
-                        <p>Do one absolutely bladdered say bugger all mate only a quid that
-                            chip shop amongst, cuppa excuse my French lemon squeezy bender
-                            zonked my lady gosh cup of tea, have it spiffing good time naff
-                            wind up codswallop crikey.</p>
-                            <h3><span>Call Us</span> +456 968 562 75</h3>
-                        <a href="course-list.html" class="btn_1">View Courses</a>
+                        <h3>10 Years of Experience</h3>
+                        <p>As the oldest continuously run educational institution, Buddha health care & Higher Education, Pharmacy &Nursing College, Ranchi, Jharkhand remains committed to providing an academically rigorous education to students who will walk out of college ready for lives of leadership and service to their community. </p>
+                            {{-- <h3><span>Call Us</span> +456 968 562 75</h3> --}}
+                        <a href="{{ route('about') }}" class="btn_1">View More</a>
                     </div>
                 </div>
             </div>
@@ -157,73 +240,12 @@
     </section>
     <!-- about us part end -->
 
-    <!-- course category part here -->
-    <section class="course_category section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6" data-aos="fade-up"
-                data-aos-duration="1200">
-                    <div class="section_tittle">
-                        <h2>Browse Online <br>
-                            Course Categories</h2>
-                        <p>Jeffrey crikey victoria sponge mush spiffing super arse over
-                        tit matie boy smashing. The little rotter off his nut codswallop.!</p>
-                    </div>
-                </div>
-                <div class="col-lg-12" data-aos="fade-up"
-                data-aos-duration="1200">
-                    <div class="course_category_item owl-carousel">
-                        <a href="course-category.html" class="single_category_item pink">
-                            <img src="{{ asset('landing/uploads/2022/11/category_icon_1.png')}}" alt="#">
-                            <h4>Arts & Humanities</h4>
-                            <p>10 Courses</p>
-                        </a>
-                        <a href="course-category.html" class="single_category_item">
-                            <img src="{{ asset('landing/uploads/2022/11/category_icon_2.png')}}" alt="#">
-                            <h4>Business</h4>
-                            <p>15 Courses</p>
-                        </a>
-                        <a href="course-category.html" class="single_category_item yellow">
-                            <img src="{{ asset('landing/uploads/2022/11/category_icon_3.png')}}" alt="#">
-                            <h4>Computer Science</h4>
-                            <p>8 Courses</p>
-                        </a>
-                        <a href="course-category.html" class="single_category_item green">
-                            <img src="{{ asset('landing/uploads/2022/11/category_icon_4.png')}}" alt="#">
-                            <h4>Data Science</h4>
-                            <p>20 Courses</p>
-                        </a>
-                        <a href="course-category.html" class="single_category_item pink">
-                            <img src="{{ asset('landing/uploads/2022/11/category_icon_1.png')}}" alt="#">
-                            <h4>Language Learning</h4>
-                            <p>30 Courses</p>
-                        </a>
-                        <a href="course-category.html" class="single_category_item">
-                            <img src="{{ asset('landing/uploads/2022/11/category_icon_2.png')}}" alt="#">
-                            <h4>Math & Logic</h4>
-                            <p>18 Courses</p>
-                        </a>
-                        <a href="course-category.html" class="single_category_item yellow">
-                            <img src="{{ asset('landing/uploads/2022/11/category_icon_3.png')}}" alt="#">
-                            <h4>Technology</h4>
-                            <p>3 Courses</p>
-                        </a>
-                        <a href="course-category.html" class="single_category_item green">
-                            <img src="{{ asset('landing/uploads/2022/11/category_icon_4.png')}}" alt="#">
-                            <h4>IT & Software</h4>
-                            <p>3 Courses</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- course category part end -->
+
 
 
 
     <!-- motivation part here -->
-    <section class="motivation section_bg">
+    {{-- <section class="motivation section_bg">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-6">
@@ -274,7 +296,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- motivation part end -->
 
     <!-- event part here -->
@@ -284,61 +306,46 @@
             data-aos-duration="1200">
                 <div class="col-lg-6">
                     <div class="section_tittle">
-                        <h2>Our Upcoming Events</h2>
-                        <p>Jeffrey crikey victoria sponge mush spiffing
+                        <h2>Our Co-curricular Activities</h2>
+                        {{-- <p>Jeffrey crikey victoria sponge mush spiffing
                         super arse over tit matie boy smashing. The little
-                        rotter off his nut codswallop.!</p>
+                        rotter off his nut codswallop.!</p> --}}
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="single_event_list" data-aos="fade-up" data-aos-duration="1200">
-                        <img src="{{ asset('landing/uploads/2022/11/event_list_3.png')}}" alt="" class="img-fluid">
+                        <img src="{{ asset('landing/uploads/img/event-1.jpg')}}" alt="" class="img-fluid">
                         <div class="event_list_content">
-                            <h5>14 January, 2023 </h5>
-                            <h2>Why you Need Advance Developmemt Process Course?</h2>
-                            <div class="event_list_tag">
-                                <p><i class="icon_clock_alt"></i>8.30 AM - 5.30 PM</p>
-                                <p><i class="icon_pin_alt"></i>9 Road, Mirpur Dohs, New York, USA</p>
-                            </div>
-                            <p>He lost his bottle bamboozled golly gosh some dodgy chav only a quid
-                            my lady chip shop argy-bargy, the bee's knees morish loo get stuffed
-                            mate pardon me zonked knees.!</p>
+                            {{-- <h5>14 January, 2023 </h5> --}}
+                            <h2>Athletics</h2>
+
+                            <p>Our students are passionate about sports and athletics and have the freedom to choose the one they like and wish to take up.</p>
                         </div>
                     </div>
                     <div class="single_event_list" data-aos="fade-up" data-aos-duration="1600">
-                        <img src="{{ asset('landing/uploads/2022/11/event_list_2.png')}}" alt="" class="img-fluid">
+                        <img src="{{ asset('landing/uploads/img/event-2.jpg')}}" alt="" class="img-fluid">
                         <div class="event_list_content">
-                            <h5>14 January, 2023 </h5>
-                            <h2>Graphic Illustration: Design with Color and Shape</h2>
-                            <div class="event_list_tag">
-                                <p><i class="icon_clock_alt"></i>8.30 AM - 5.30 PM</p>
-                                <p><i class="icon_pin_alt"></i>9 Road, Mirpur Dohs, New York, USA</p>
-                            </div>
-                            <p>He lost his bottle bamboozled golly gosh some dodgy chav only a quid
-                            my lady chip shop argy-bargy, the bee's knees morish loo get stuffed
-                            mate pardon me zonked knees.!</p>
+                            {{-- <h5>14 January, 2023 </h5> --}}
+                            <h2>In-house Publications</h2>
+
+                            <p>We have several writers who are encouraged to come up with creations that are regularly published in our in-house magazines.</p>
                         </div>
                     </div>
                     <div class="single_event_list" data-aos="fade-up" data-aos-duration="1800">
-                        <img src="{{ asset('landing/uploads/2022/11/event_list_1.png')}}" alt="" class="img-fluid">
+                        <img src="{{ asset('landing/uploads/img/event-3.jpg')}}" alt="" class="img-fluid">
                         <div class="event_list_content">
-                            <h5>14 January, 2023 </h5>
-                            <h2>Magazine Design Start to Finish: The Inside Pages</h2>
-                            <div class="event_list_tag">
-                                <p><i class="icon_clock_alt"></i>8.30 AM - 5.30 PM</p>
-                                <p><i class="icon_pin_alt"></i>9 Road, Mirpur Dohs, New York, USA</p>
-                            </div>
-                            <p>He lost his bottle bamboozled golly gosh some dodgy chav only a quid
-                            my lady chip shop argy-bargy, the bee's knees morish loo get stuffed
-                            mate pardon me zonked knees.!</p>
+                            {{-- <h5>14 January, 2023 </h5> --}}
+                            <h2>Performing Arts & Music</h2>
+
+                            <p>With professionals on board, we take pride in training our students in art forms like dance, drama, painting and more.</p>
                         </div>
                     </div>
-                    <div class="event_list_btn" data-aos="fade-up"
+                    {{-- <div class="event_list_btn" data-aos="fade-up"
                     data-aos-anchor-placement="top-center">
                         <a href="events.html" class="btn_3">View All Events</a>
-                    </div>
+                    </div> --}}
 
                 </div>
             </div>

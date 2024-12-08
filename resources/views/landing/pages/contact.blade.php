@@ -1,24 +1,12 @@
 @extends('landing.layouts.base')
 
+@section('title', 'Contact Us')
+
 @section('content')
 
  <!-- breadcrumb part -->
- <section class="breadcrumb_part blog_grid_bg">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 ">
-                <div class="breadcrumb_iner">
-                    <h2>Contact</h2>
-                    <div class="breadcrumb_iner_link">
-                        <a href="{{ route('home')}}">Home</a>
-                        <i class="arrow_carrot-right"></i>
-                        <span>Contact</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+ @include('landing.components.breadcrumb',['title' => 'Contact Us', 'subtitle' => '', 'banner' => ''])
 <!-- breadcrumb part end -->
 
 <!-- Start contact us -->

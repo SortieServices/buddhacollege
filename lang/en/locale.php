@@ -56,6 +56,9 @@ return [
     "Registration" => "Registration",
     "News & Events" => "News & Events",
     "Students" => "Students",
+    "Admission" => "Admission",
+    "Blogs" => "Blogs",
+    "Create" => "Create",
 ];
 
 // return [

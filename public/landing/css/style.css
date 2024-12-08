@@ -1152,7 +1152,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
 
 .btn_3 {
   color: #FCBA21;
-  border: 2px solid #7aa8fd;
+  border: 2px solid #FCBA21;
   display: inline-block;
   padding: 14px 39px;
   text-transform: capitalize;
@@ -1259,7 +1259,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
   }
 }
 .header_part .btn_1:hover {
-  border: 2px solid #7aa8fd;
+  border: 2px solid #FCBA21;
   background-color: transparent;
   color: #FCBA21;
 }
@@ -1990,7 +1990,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
 
 .course_details {
   overflow: hidden;
-  margin-top: -80px;
+  /* margin-top: -80px; */
   z-index: 9;
   position: relative;
 }
@@ -3232,7 +3232,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
 }
 
 .student_review {
-  background-color: #3070e6;
+  background-color: #FCBA21;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -6148,7 +6148,22 @@ html[dir="rtl"] .lp-archive-courses .course-summary {
 
 /* custom  css */
 
+.bg-primary {
+  background-color: #FCBA21 !important;
+}
+
 .courses_active {
   transform: translateY(0);
   color: #FCBA21 !important;
+}
+
+.btn-outline-primary {
+  color: #FCBA21 !important;
+  border-color: #FCBA21 !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #FCBA21 !important;
+  border-color: #FCBA21 !important;
 }

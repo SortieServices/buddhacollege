@@ -33,27 +33,22 @@
                         <nav class="navbar_bar">
                             <ul>
                                 <li>
-                                    <a class="nav-link {{ request()->is('about') ? 'active' : '' }}" href="{{ route('about.index') }}">About Us</a>
+                                    <a class="nav-link {{ request()->is('about') ? 'active' : '' }}" href="{{ route('about') }}">About Us</a>
                                 </li>
                                 <li>
-                                    <a class="nav-link {{ request()->is('/') || request()->is('home') ? 'active' : '' }}" aria-current="page"  href="{{ route('home') }}">Admission</a>
+                                    <a class="nav-link {{ request()->is('admission') ? 'active' : '' }}" aria-current="page"  href="{{ route('admission') }}">Admission</a>
                                 </li>
-
                                 <li class="mega_menu_dropdown">
-                                    <a class="mega_menu_dropdown-toggle nav-link {{ request()->is('courses/*') || request()->is('courses') ? 'active' : '' }} " href="{{ route('courses.index')}}">Courses</a>
+                                    <a class="mega_menu_dropdown-toggle nav-link {{ request()->is('academic') ? 'active' : '' }}" aria-current="page" href="{{ route('academic') }}">Academic</a>
                                     <ul>
-                                        <li><a class="{{ request()->is('courses/pharmacy') ? 'active' : '' }}" href="{{ route('courses.pharmacy')}}">Pharmacy</a></li>
-                                        <li><a class="{{ request()->is('courses/anm') ? 'active' : '' }}" href="{{ route('courses.anm')}}">ANM</a></li>
-                                        <li><a class="{{ request()->is('courses/gnm') ? 'active' : '' }}" href="{{ route('courses.gnm')}}">GNM</a></li>
-                                        <li><a class="{{ request()->is('courses/nurshing') ? 'active' : '' }}" href="{{ route('courses.nurshing')}}">Nurshing</a></li>
+                                        <li><a class="{{ request()->is('courses') ? 'active' : '' }}" href="{{ route('courses.d-pharma')}}">Undergraduate</a></li>
+                                        <li><a class="{{ request()->is('courses') ? 'active' : '' }}" href="{{ route('courses.b-pharma')}}">Graduate</a></li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a class="nav-link {{ request()->is('academic') ? 'active' : '' }}" aria-current="page" href="{{ route('academic.index') }}">Academic</a>
-                                </li>
-                                <li><a class="nav-link {{ request()->is('activity') ? 'active' : '' }}" href="{{ route('activity.index') }}">Activity</a></li>
-                                <li><a class="nav-link {{ request()->is('activity') ? 'active' : '' }}" href="{{ route('activity.index') }}">Gallery</a></li>
-                                {{-- <li><a class="nav-link {{ request()->is('contact') ? 'active' : '' }}" href="{{ route('contact.index') }}">Contact Us</a></li> --}}
+                                {{-- <li><a class="nav-link {{ request()->is('activity') ? 'active' : '' }}" href="{{ route('activity.index') }}">Activity</a></li> --}}
+                                <li><a class="nav-link {{ request()->is('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">Gallery</a></li>
+                                <li><a class="nav-link {{ request()->is('investors') ? 'active' : '' }}" href="{{ route('investors') }}">Investors</a></li>
+                                <li><a class="nav-link {{ request()->is('news-events') ? 'active' : '' }}" href="{{ route('news-events.index') }}">News & Events</a></li>
                             </ul>
                         </nav>
                         {{-- <div class="navbar_btn">

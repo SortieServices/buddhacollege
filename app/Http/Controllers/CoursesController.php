@@ -10,15 +10,18 @@ class CoursesController extends Controller
         return view('landing.pages.courses');
     }
     public function anm(){
-        return view('landing.pages.anm');
+        return view('landing.pages.courses.anm');
     }
     public function gnm(){
-        return view('landing.pages.gnm');
+        return view('landing.pages.courses.gnm');
     }
-    public function pharmacy(){
-        return view('landing.pages.pharmacy');
+    public function d_pharmacy(){
+        return view('landing.pages.courses.d-pharmacy');
+    }
+    public function b_pharmacy(){
+        return view('landing.pages.courses.b-pharmacy');
     }
     public function nurshing(){
-        return view('landing.pages.nurshing');
+        return view('landing.pages.courses.nurshing');
     }
 }

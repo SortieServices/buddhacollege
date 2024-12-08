@@ -58,13 +58,96 @@
         </div>
       </div>
     </div>
-
-
-
-
-
 </div>
     <!--/ Medal Card -->
+<div class="row match-height">
+    <div class="col-xl-6 col-md-6 col-12">
+        <div class="card">
+            <div class="card-body">
+                <h5>Banner</h5>
+                <div class="mb-75 mt-2 pt-50 banner_part">
+                    <div class="single_banner_part">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-4 ">
+                                <img src="{{asset('landing/uploads/2022/11/banner_1.png')}}" class="object-fit-contain border rounded img-fluid" alt="Medal Pic" />
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="banner_iner">
+                                    <h2>Welcome to Buddha Nursing College</h2>
+                                    <h5>Education is the best key success in life</h5>
+                                    <a href="course-list.html" class="btn_2">Our Courses</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body border-top">
+                <div class="mb-75 mt-2 pt-50 banner_part">
+                    <div class="single_banner_part">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-4 ">
+                                <img src="{{asset('landing/uploads/2022/11/banner_1.png')}}" class="object-fit-contain border rounded img-fluid" alt="Medal Pic" />
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="banner_iner">
+                                    <h2>Welcome to Buddha Nursing College</h2>
+                                    <h5>Education is the best key success in life</h5>
+                                    <a href="course-list.html" class="btn_2">Our Courses</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary float-end">View</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6 col-md-6 col-12">
+        <div class="card">
+            <div class="card-body">
+                <h5>News &  <em>Events</em></h5>
+                <div class="mb-75 mt-2 pt-50 banner_part">
+                    <div class="single_banner_part">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-4 ">
+                                <img src="{{asset('landing/uploads/2022/11/banner_1.png')}}" class="object-fit-contain border rounded img-fluid" alt="Medal Pic" />
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="banner_iner">
+                                    <h2>Welcome to Buddha Nursing College</h2>
+                                    <h5>Education is the best key success in life</h5>
+                                    {{-- <a href="course-list.html" class="btn_2">Our Courses</a> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body border-top">
+                <div class="mb-75 mt-2 pt-50 banner_part">
+                    <div class="single_banner_part">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-4 ">
+                                <img src="{{asset('landing/uploads/2022/11/banner_1.png')}}" class="object-fit-contain border rounded img-fluid" alt="Medal Pic" />
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="banner_iner">
+                                    <h2>Welcome to Buddha Nursing College</h2>
+                                    <h5>Education is the best key success in life</h5>
+                                    {{-- <a href="course-list.html" class="btn_2">Our Courses</a> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary float-end">View</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </section>
 <!-- Dashboard Ecommerce ends -->
