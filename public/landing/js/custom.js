@@ -51,7 +51,7 @@
         });
     });
   });
-  
+
   //mega menu js
   //if ($(window).width() < 991) {
     //$('.mega_menu_dropdown ul').hide();
@@ -314,7 +314,7 @@
           }
       })
   }
-  
+
   //course details js
   $('.lp-entry-content .course-extra-box').on('click', function() {
       $(this).toggleClass('active');
@@ -323,8 +323,8 @@
 
   //lessons js
   $('body').toggleClass('lp-sidebar-toggle__open');
-  
-  //popup course js 
+
+  //popup course js
   $('#popup-course #sidebar-toggle').on('click', function() {
       $('body').toggleClass('lp-sidebar-toggle__close');
       $('body').toggleClass('lp-sidebar-toggle__open');
@@ -342,3 +342,25 @@
   });
 
 }(jQuery));
+
+
+// CUSTOM JS
+
+$('#state').on('change', function() {
+    var state_id = $(this).val();
+    $.ajax({
+        type: "GET",
+        url: "state/cities/" + state_id,
+        success: function(response) {
+            let cities = response;
+            //  cities = response.data;
+            console.log(cities);
+            $('#city').empty();
+            $('#city').append('<option selected disabled>Select City</option>');
+            $.each(cities, function(key, value) {
+                $('#city').append('<option value="' + value.id + '">' + value.name + '</option>');
+            });
+        }
+    })
+
+});

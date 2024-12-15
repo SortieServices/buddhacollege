@@ -1390,6 +1390,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
 @media (max-width: 991px) {
   .navbar_bar {
     position: absolute;
+    display: inline-block;
     left: 0;
     top: 70px;
     width: 100%;
@@ -1407,6 +1408,9 @@ a:focus, .button:focus, button:focus, .btn:focus {
     position: absolute;
     right: 20px;
     top: 15px;
+  }
+  .logo img {
+    width: 82px;
   }
 }
 @media (min-width: 576px) {
@@ -6147,6 +6151,10 @@ html[dir="rtl"] .lp-archive-courses .course-summary {
 
 
 /* custom  css */
+
+.text-primary {
+  color: #FCBA21 !important;
+}
 
 .bg-primary {
   background-color: #FCBA21 !important;

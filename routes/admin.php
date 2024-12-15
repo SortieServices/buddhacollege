@@ -46,13 +46,13 @@ Route::group(['prefix' => 'admin'], function(){
 });
 
 
+Route::resource('/cities', CityController::class);
+Route::get('state/cities/{state_id}', [CityController::class, 'getCity'])->name('cities.state');
+
 
 Route::middleware('auth','web')->prefix('admin')->group(function(){
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
-
-    Route::resource('/cities', CityController::class);
-    Route::get('cities/{state_id}', [CityController::class, 'getCity'])->name('cities.state');
 
     Route::resource('users', UserController::class);
     Route::get('/users/{user}/change-status', [UserController::class, 'changeStatus'])->name('users.change.status');

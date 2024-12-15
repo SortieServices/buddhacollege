@@ -29,7 +29,7 @@
                         <li><a href="{{ route('admission') }}">Admission</a></li>
                     </ul>
                 </div>
-                <button type="button" class="btn btn-outline-primary position-absolute px-5 py-2" style="bottom: 80px;">Enroll Now</button>
+                <a href="{{ route('admission') }}" type="button" class="btn btn-outline-primary position-absolute px-5 py-2" style="bottom: 80px;">Enroll Now</a>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="single_feature_footer footer_nav">
@@ -37,7 +37,7 @@
                     <ul>
                         <li><a href="{{ route('home')}}">Home</a></li>
                         <li><a href="{{ route('about')}}">About Us</a></li>
-                        <li><a href="{{ route('academic') }}">Academic</a></li>
+                        <li><a href="{{ route('academic.undergraduate') }}">Academic</a></li>
                         <li><a href="{{ route('news-events.index')}}">News & Events</a></li>
                         <li><a href="{{ route('contact') }}">Contact</a></li>
                         <li><a href="{{ route('investors')}}">Investors</a></li>

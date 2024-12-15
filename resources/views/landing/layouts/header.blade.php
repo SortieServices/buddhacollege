@@ -39,10 +39,10 @@
                                     <a class="nav-link {{ request()->is('admission') ? 'active' : '' }}" aria-current="page"  href="{{ route('admission') }}">Admission</a>
                                 </li>
                                 <li class="mega_menu_dropdown">
-                                    <a class="mega_menu_dropdown-toggle nav-link {{ request()->is('academic') ? 'active' : '' }}" aria-current="page" href="{{ route('academic') }}">Academic</a>
+                                    <a class="mega_menu_dropdown-toggle nav-link {{ request()->is('academic-undergraduate') || request()->is('academic-graduate') ? 'active' : '' }}" aria-current="page" href="#">Academic</a>
                                     <ul>
-                                        <li><a class="{{ request()->is('courses') ? 'active' : '' }}" href="{{ route('courses.d-pharma')}}">Undergraduate</a></li>
-                                        <li><a class="{{ request()->is('courses') ? 'active' : '' }}" href="{{ route('courses.b-pharma')}}">Graduate</a></li>
+                                        <li><a class="{{ request()->is('academic-undergraduate') ? 'active' : '' }}" href="{{ route('academic.undergraduate')}}">Undergraduate</a></li>
+                                        <li><a class="{{ request()->is('academic-graduate') ? 'active' : '' }}" href="{{ route('academic.graduate')}}">Graduate</a></li>
                                     </ul>
                                 </li>
                                 {{-- <li><a class="nav-link {{ request()->is('activity') ? 'active' : '' }}" href="{{ route('activity.index') }}">Activity</a></li> --}}
