@@ -153,32 +153,32 @@
                     <div class="col-lg-12" data-aos="fade-up"
                     data-aos-duration="1200">
                         <div class="course_category_item owl-carousel">
-                            <a href="course-category.html" class="single_category_item pink">
+                            <a href="{{ route('courses.anm')}}" class="single_category_item pink">
                                 <img src="{{ asset('landing/uploads/2022/11/category_icon_1.png')}}" alt="#">
                                 <h4>ANM</h4>
                                 <p>Graduate Courses</p>
                             </a>
-                            <a href="course-category.html" class="single_category_item">
+                            <a href="{{ route('courses.gnm')}}" class="single_category_item">
                                 <img src="{{ asset('landing/uploads/2022/11/category_icon_2.png')}}" alt="#">
                                 <h4>GNM</h4>
                                 <p>Graduate Courses</p>
                             </a>
-                            <a href="course-category.html" class="single_category_item yellow">
+                            <a href="{{ route('courses.d-pharma')}}" class="single_category_item yellow">
                                 <img src="{{ asset('landing/uploads/2022/11/category_icon_3.png')}}" alt="#">
                                 <h4>Pharmacy</h4>
                                 <p>Diploma Courses</p>
                             </a>
-                            <a href="course-category.html" class="single_category_item green">
+                            <a href="{{ route('courses.b-pharma')}}" class="single_category_item green">
                                 <img src="{{ asset('landing/uploads/2022/11/category_icon_4.png')}}" alt="#">
                                 <h4>Pharmacy</h4>
                                 <p>Graduate Courses</p>
                             </a>
-                            <a href="course-category.html" class="single_category_item pink">
+                            <a href="{{ route('courses.nurshing')}}" class="single_category_item pink">
                                 <img src="{{ asset('landing/uploads/2022/11/category_icon_1.png')}}" alt="#">
                                 <h4>Nursing</h4>
                                 <p>Diploma Courses</p>
                             </a>
-                            <a href="course-category.html" class="single_category_item">
+                            <a href="{{ route('courses.nurshing')}}" class="single_category_item">
                                 <img src="{{ asset('landing/uploads/2022/11/category_icon_2.png')}}" alt="#">
                                 <h4>Nursing</h4>
                                 <p>Graduate Courses</p>

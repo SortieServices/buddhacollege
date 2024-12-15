@@ -29,7 +29,7 @@
                         <li><a href="{{ route('admission') }}">Admission</a></li>
                     </ul>
                 </div>
-                <a href="{{ route('admission') }}" type="button" class="btn btn-outline-primary position-absolute px-5 py-2" style="bottom: 80px;">Enroll Now</a>
+                <a href="{{ route('admission') }}" type="button" class="btn btn-outline-primary position-absolute px-5 py-2 d-none d-md-block" style="bottom: 80px;">Enroll Now</a>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="single_feature_footer footer_nav">
@@ -43,7 +43,11 @@
                         <li><a href="{{ route('investors')}}">Investors</a></li>
                     </ul>
                 </div>
-                <a href="{{ asset('landing/uploads/PROSPECTUS.pdf')}}" target="_blank" class="btn btn-outline-primary position-absolute px-5 py-2" style="bottom: 80px;">Download Browser</a>
+                <a href="{{ asset('landing/uploads/PROSPECTUS.pdf')}}" target="_blank" class="btn btn-outline-primary position-absolute px-5 py-2 d-none d-md-block" style="bottom: 80px;">Download Browser</a>
+            </div>
+            <div class="d-flex justify-content-between flex-column d-md-none d-block w-100 gap-2">
+                <a href="{{ route('admission') }}" type="button" class="btn btn-outline-primary w-100 mb-1">Enroll Now</a>
+                <a href="{{ asset('landing/uploads/PROSPECTUS.pdf')}}" target="_blank" class="btn btn-outline-primary w-100">Download Browser</a>
             </div>
             <div class="col-lg-12">
                 <div class="copyright_part">
